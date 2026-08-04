@@ -96,7 +96,7 @@ export default function CostCalculator() {
               </div>
               <input type="range" min={10} max={10000} step={10} value={dailyRequests}
                 onChange={(e) => setDailyRequests(Number(e.target.value))}
-                className="w-full h-2 rounded-full appearance-none bg-slate-200 dark:bg-white/10 accent-rose-500 cursor-pointer" />
+                className="w-full h-2 rounded-full appearance-none bg-slate-300 dark:bg-slate-600 accent-rose-500 cursor-pointer" />
             </div>
 
             <div className="space-y-2">
@@ -106,7 +106,7 @@ export default function CostCalculator() {
               </div>
               <input type="range" min={100} max={32000} step={100} value={avgInputTokens}
                 onChange={(e) => setAvgInputTokens(Number(e.target.value))}
-                className="w-full h-2 rounded-full appearance-none bg-slate-200 dark:bg-white/10 accent-rose-500 cursor-pointer" />
+                className="w-full h-2 rounded-full appearance-none bg-slate-300 dark:bg-slate-600 accent-rose-500 cursor-pointer" />
             </div>
 
             <div className="space-y-2">
@@ -116,7 +116,7 @@ export default function CostCalculator() {
               </div>
               <input type="range" min={50} max={8000} step={50} value={avgOutputTokens}
                 onChange={(e) => setAvgOutputTokens(Number(e.target.value))}
-                className="w-full h-2 rounded-full appearance-none bg-slate-200 dark:bg-white/10 accent-rose-500 cursor-pointer" />
+                className="w-full h-2 rounded-full appearance-none bg-slate-300 dark:bg-slate-600 accent-rose-500 cursor-pointer" />
             </div>
 
             <div className="space-y-2">
@@ -126,7 +126,7 @@ export default function CostCalculator() {
               </div>
               <input type="range" min={0} max={95} step={1} value={compressionRate}
                 onChange={(e) => setCompressionRate(Number(e.target.value))}
-                className="w-full h-2 rounded-full appearance-none bg-slate-200 dark:bg-white/10 accent-emerald-500 cursor-pointer" />
+                className="w-full h-2 rounded-full appearance-none bg-slate-300 dark:bg-slate-600 accent-emerald-500 cursor-pointer" />
             </div>
 
             <div className="space-y-2">
@@ -136,7 +136,7 @@ export default function CostCalculator() {
               </div>
               <input type="range" min={0} max={100} step={1} value={freeRatio}
                 onChange={(e) => setFreeRatio(Number(e.target.value))}
-                className="w-full h-2 rounded-full appearance-none bg-slate-200 dark:bg-white/10 accent-violet-500 cursor-pointer" />
+                className="w-full h-2 rounded-full appearance-none bg-slate-300 dark:bg-slate-600 accent-violet-500 cursor-pointer" />
             </div>
           </div>
         </div>

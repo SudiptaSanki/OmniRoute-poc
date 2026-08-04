@@ -89,7 +89,7 @@ export default function App() {
           <div className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
             <button onClick={() => scrollToSection('providers')} className="hover:text-slate-900 dark:hover:text-white transition-colors">Providers</button>
             <button onClick={() => scrollToSection('features')} className="hover:text-slate-900 dark:hover:text-white transition-colors">Features</button>
-            <button onClick={() => scrollToSection('why')} className="hover:text-slate-900 dark:hover:text-white transition-colors">Why</button>
+            <button onClick={() => scrollToSection('promise')} className="hover:text-slate-900 dark:hover:text-white transition-colors">Why</button>
             <button onClick={() => scrollToSection('compare')} className="hover:text-slate-900 dark:hover:text-white transition-colors">Compare</button>
             <button onClick={() => scrollToSection('control-center')} className="text-rose-500 dark:text-rose-400 hover:text-rose-600 dark:hover:text-rose-300 transition-colors flex items-center gap-1.5">
               <Zap className="w-3.5 h-3.5 fill-current" /> Live POC Control Center
