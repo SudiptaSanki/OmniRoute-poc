@@ -116,10 +116,11 @@ export default function App() {
               </button>
               {langOpen && (
                 <div className="absolute right-0 mt-2 w-32 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg border border-slate-200 dark:border-white/10 rounded-2xl shadow-xl p-1 z-50 text-xs text-slate-600 dark:text-slate-300">
-                  <button onClick={() => { setLang('EN'); setLangOpen(false); }} className={`w-full text-left px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 ${lang === 'EN' ? 'font-bold text-rose-500' : 'font-semibold'}`}>🇺🇸 English</button>
-                  <button onClick={() => { setLang('ES'); setLangOpen(false); }} className={`w-full text-left px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 ${lang === 'ES' ? 'font-bold text-rose-500' : 'font-semibold'}`}>🇪🇸 Español</button>
-                  <button onClick={() => { setLang('PT'); setLangOpen(false); }} className={`w-full text-left px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 ${lang === 'PT' ? 'font-bold text-rose-500' : 'font-semibold'}`}>🇧🇷 Português</button>
-                  <button onClick={() => { setLang('JA'); setLangOpen(false); }} className={`w-full text-left px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 ${lang === 'JA' ? 'font-bold text-rose-500' : 'font-semibold'}`}>🇯🇵 日本語</button>
+                  <button onClick={() => { setLang('EN'); window.triggerTranslate('en'); setLangOpen(false); }} className={`w-full text-left px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 ${lang === 'EN' ? 'font-bold text-rose-500' : 'font-semibold'}`}>🇺🇸 English</button>
+                  <button onClick={() => { setLang('ES'); window.triggerTranslate('es'); setLangOpen(false); }} className={`w-full text-left px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 ${lang === 'ES' ? 'font-bold text-rose-500' : 'font-semibold'}`}>🇪🇸 Español</button>
+                  <button onClick={() => { setLang('PT'); window.triggerTranslate('pt'); setLangOpen(false); }} className={`w-full text-left px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 ${lang === 'PT' ? 'font-bold text-rose-500' : 'font-semibold'}`}>🇧🇷 Português</button>
+                  <button onClick={() => { setLang('JA'); window.triggerTranslate('ja'); setLangOpen(false); }} className={`w-full text-left px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 ${lang === 'JA' ? 'font-bold text-rose-500' : 'font-semibold'}`}>🇯🇵 日本語</button>
+                  <button onClick={() => { setLang('Other'); window.toggleTranslateWidget(); setLangOpen(false); }} className={`w-full text-left px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 ${lang === 'Other' ? 'font-bold text-rose-500' : 'font-semibold'}`}>🌐 Others...</button>
                 </div>
               )}
             </div>
