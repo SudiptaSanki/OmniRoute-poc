@@ -65,5 +65,5 @@ This POC includes 4 custom-built, interactive features that expand upon the core
 This project is open-source and available under the MIT License.
 
 <!-- autobot:start -->
-<!-- s:0266ee82 t:2026-09-10T14:26:48.711Z a:code review session b:5376 -->
+<!-- s:6c6695af t:2026-09-10T14:26:56.756Z a:schema migration b:5847 -->
 <!-- autobot:end -->
